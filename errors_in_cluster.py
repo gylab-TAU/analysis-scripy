@@ -21,6 +21,7 @@ def get_error_rate(cluster):
 
     max_occurences = max(count)
 
+
     errors = len(identities) - max_occurences
 
     return (errors / len(identities)) * 100

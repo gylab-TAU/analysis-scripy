@@ -1,0 +1,9 @@
+participant id,gallery name,AUC,num of clusters,Cluster 1 error %,Cluster 2 error %
+one_cluster,Matt and Dominic,0.5605893186003684,1,47.368421052631575,
+two_clusters,Matt and Dominic,0.5317024843773815,2,40.0,37.5
+one_cluster,tamar and marina,0.5677,1,50.0,
+two_clusters,tamar and marina,0.5563,2,36.36363636363637,33.33333333333333
+one_cluster,omer and eyal,0.6018,1,50.0,
+two_clusters,omer and eyal,1.0,2,0.0,0.0
+one_cluster,tazmin and tess,0.5840048840048842,1,47.368421052631575,
+two_clusters,tazmin and tess,0.5161073825503355,2,50.0,50.0

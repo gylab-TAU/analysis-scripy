@@ -10,16 +10,17 @@ def get_gallery_names(df):
 def get_max_num_of_clusters(data):
     max = 0
     for participant in data:
-        for gallery in data[participant]["clusters"]:
-            length = len(gallery)
+        for gallery_name in data[participant]["clusters"]:
+            length = len(data[participant]["clusters"][gallery_name])
+
             if length > max:
                 max = length
     return max
 
 def get_line(participant_id, participant, gallery_name, max_clusters, gallery_index):
-    line = [participant_id, gallery_name, participant["auc"][gallery_index] ,len(participant["clusters"][gallery_index])]
+    line = [participant_id, gallery_name, participant["auc"][gallery_name] ,len(participant["clusters"][gallery_name])]
 
-    errors = participant["errors"][gallery_index]
+    errors = participant["errors"][gallery_name]
 
     for error in errors:
         line.append(error)
