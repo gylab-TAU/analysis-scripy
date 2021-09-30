@@ -24,7 +24,7 @@ def get_last_line_of_coordinates(df):
 
     for i in range (len(arr)):
         row = arr[i]
-        if row[0] == "id" or row[0] == '"id"':
+        if row[0] == "id" or row[0] == '"id"' or "age" in row[0]:
             return i
     return -1
 
