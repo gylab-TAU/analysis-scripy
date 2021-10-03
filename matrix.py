@@ -32,7 +32,7 @@ def getMatrices(results):
     last_line = len(results) - 4
     temp = results.loc[0:last_line]
 
-    temp.sort_values(by=['"Image Name"'], inplace=True, ignore_index=True)
+    temp.sort_values(by=['Image Name'], inplace=True, ignore_index=True)
     results.loc[0:last_line - 3] = temp
 
     # create empty galleries

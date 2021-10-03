@@ -4,7 +4,7 @@ import overlappArea
 def convert_string_to_number(string):
     if (type(string) != str):
         return string
-    return int(string[1:-1])
+    return int(string.replace('"', ""))
 
 def get_galleries(results):
     last_line = len(results) - 1

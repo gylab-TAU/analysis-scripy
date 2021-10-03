@@ -17,7 +17,7 @@ def read_csv_from_args(path):
     return pd.read_csv(path, index_col=None, header=0)
 
 def get_participant_id(df):
-    return df.iloc[-1, 3]
+    return df.iloc[-1, 4]
 
 def get_last_line_of_coordinates(df):
     arr = df.values
